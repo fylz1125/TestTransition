@@ -206,6 +206,11 @@
 		F69FB0B016AFF817007A31B2 /* CCPhysicsSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F69FB0AF16AFF817007A31B2 /* CCPhysicsSprite.cpp */; };
 		F69FB0B716AFF817007A31B2 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F69FB0B616AFF817007A31B2 /* AppDelegate.cpp */; };
 		F69FB0BA16AFF817007A31B2 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F69FB0B916AFF817007A31B2 /* HelloWorldScene.cpp */; };
+		F69FB0CA16AFFA4A007A31B2 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = F69FB0C916AFFA4A007A31B2 /* background2.png */; };
+		F69FB0D016B01245007A31B2 /* f1.png in Resources */ = {isa = PBXBuildFile; fileRef = F69FB0CE16B01245007A31B2 /* f1.png */; };
+		F69FB0D116B01245007A31B2 /* f2.png in Resources */ = {isa = PBXBuildFile; fileRef = F69FB0CF16B01245007A31B2 /* f2.png */; };
+		F69FB0D316B022D8007A31B2 /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = F69FB0D216B022D8007A31B2 /* background1.png */; };
+		F69FB0D616B02585007A31B2 /* CCTransitonSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F69FB0D416B02584007A31B2 /* CCTransitonSlider.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -648,6 +653,12 @@
 		F69FB0B616AFF817007A31B2 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		F69FB0B816AFF817007A31B2 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		F69FB0B916AFF817007A31B2 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		F69FB0C916AFFA4A007A31B2 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background2.png; path = Resources/background2.png; sourceTree = "<group>"; };
+		F69FB0CE16B01245007A31B2 /* f1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = f1.png; path = Resources/f1.png; sourceTree = "<group>"; };
+		F69FB0CF16B01245007A31B2 /* f2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = f2.png; path = Resources/f2.png; sourceTree = "<group>"; };
+		F69FB0D216B022D8007A31B2 /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background1.png; path = Resources/background1.png; sourceTree = "<group>"; };
+		F69FB0D416B02584007A31B2 /* CCTransitonSlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCTransitonSlider.cpp; path = Classes/CCTransitonSlider.cpp; sourceTree = "<group>"; };
+		F69FB0D516B02585007A31B2 /* CCTransitonSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCTransitonSlider.h; path = Classes/CCTransitonSlider.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -717,6 +728,10 @@
 		F69FAE1916AFF813007A31B2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F69FB0D216B022D8007A31B2 /* background1.png */,
+				F69FB0CE16B01245007A31B2 /* f1.png */,
+				F69FB0CF16B01245007A31B2 /* f2.png */,
+				F69FB0C916AFFA4A007A31B2 /* background2.png */,
 				F69FAE1A16AFF813007A31B2 /* CloseNormal.png */,
 				F69FAE1C16AFF813007A31B2 /* CloseSelected.png */,
 				F69FAE1E16AFF813007A31B2 /* Default.png */,
@@ -1559,6 +1574,8 @@
 				F69FB0B616AFF817007A31B2 /* AppDelegate.cpp */,
 				F69FB0B816AFF817007A31B2 /* HelloWorldScene.h */,
 				F69FB0B916AFF817007A31B2 /* HelloWorldScene.cpp */,
+				F69FB0D416B02584007A31B2 /* CCTransitonSlider.cpp */,
+				F69FB0D516B02585007A31B2 /* CCTransitonSlider.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1590,6 +1607,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "w_lei@outlook.com";
 			};
 			buildConfigurationList = F69FADFE16AFF813007A31B2 /* Build configuration list for PBXProject "TestTransition" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1625,6 +1643,10 @@
 				F69FAE2D16AFF813007A31B2 /* Icon@2x.png in Resources */,
 				F69FAE2F16AFF813007A31B2 /* iTunesArtwork in Resources */,
 				F69FAEC516AFF814007A31B2 /* ChangeLog in Resources */,
+				F69FB0CA16AFFA4A007A31B2 /* background2.png in Resources */,
+				F69FB0D016B01245007A31B2 /* f1.png in Resources */,
+				F69FB0D116B01245007A31B2 /* f2.png in Resources */,
+				F69FB0D316B022D8007A31B2 /* background1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1813,6 +1835,7 @@
 				F69FB0B016AFF817007A31B2 /* CCPhysicsSprite.cpp in Sources */,
 				F69FB0B716AFF817007A31B2 /* AppDelegate.cpp in Sources */,
 				F69FB0BA16AFF817007A31B2 /* HelloWorldScene.cpp in Sources */,
+				F69FB0D616B02585007A31B2 /* CCTransitonSlider.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1944,6 +1967,7 @@
 				F69FB0BF16AFF817007A31B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

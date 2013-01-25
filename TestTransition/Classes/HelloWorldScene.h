@@ -2,6 +2,7 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+USING_NS_CC;
 
 class HelloWorld : public cocos2d::CCLayer
 {
@@ -14,9 +15,24 @@ public:
     
     // a selector callback
     void menuCloseCallback(CCObject* pSender);
+    
+    void nextCallback(CCObject *pSender);
 
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(HelloWorld);
 };
+
+class TestLayer1 : public CCLayer {
+    
+public:
+    virtual bool init();
+    
+    static CCScene* scene();
+    
+    void nextCallback(CCObject *pSender);
+    
+    CREATE_FUNC(TestLayer1);
+};
+
 
 #endif // __HELLOWORLD_SCENE_H__

@@ -90,14 +90,29 @@ public:
     void set2DProjection(void);
 
 protected:
+    /**是否被激活*/
     bool m_bActive;
     int  m_nReuseGrid;
+    
+    /**格子大小*/
     ccGridSize m_sGridSize;
+    
+    /**所用纹理*/
     CCTexture2D *m_pTexture;
+    
+    /**每格的点数*/
     CCPoint m_obStep;
+    
+    /**图像拾取器*/
     CCGrabber *m_pGrabber;
+    
+    /**纹理是否上下反转*/
     bool m_bIsTextureFlipped;
+    
+    /**shader代码片段指针*/
     CCGLProgram* m_pShaderProgram;
+    
+    /**投影方式*/
     ccDirectorProjection m_directorProjection;
 };
 

@@ -314,12 +314,13 @@ CCGrid3D::~CCGrid3D(void)
 
 void CCGrid3D::blit(void)
 {
+    //计算格子数量
     int n = m_sGridSize.x * m_sGridSize.y;
 
     ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position | kCCVertexAttribFlag_TexCoords );
     m_pShaderProgram->use();
     m_pShaderProgram->setUniformsForBuiltins();;
-
+    
     //
     // Attributes
     //
@@ -346,6 +347,7 @@ void CCGrid3D::calculateVertexPoints(void)
     CC_SAFE_FREE(m_pTexCoordinates);
     CC_SAFE_FREE(m_pIndices);
 
+    //计算总顶点数
     unsigned int numOfPoints = (m_sGridSize.x+1) * (m_sGridSize.y+1);
 
     m_pVertices = malloc(numOfPoints * sizeof(ccVertex3F));
@@ -357,6 +359,7 @@ void CCGrid3D::calculateVertexPoints(void)
     GLfloat *texArray = (GLfloat*)m_pTexCoordinates;
     GLushort *idxArray = m_pIndices;
 
+    //遍历格子
     for (x = 0; x < m_sGridSize.x; ++x)
     {
         for (y = 0; y < m_sGridSize.y; ++y)
